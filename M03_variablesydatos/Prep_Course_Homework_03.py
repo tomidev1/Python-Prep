@@ -7,6 +7,8 @@
 
 # In[7]:
 
+a = 5
+print(a)
 
 
 
@@ -14,7 +16,7 @@
 
 # In[3]:
 
-
+type(8.5)
 
 
 
@@ -22,7 +24,7 @@
 
 # In[8]:
 
-
+type(a)
 
 
 
@@ -30,14 +32,14 @@
 
 # In[2]:
 
-
+nombre = "tomas ortiz"
 
 
 # 5) Crear una variable que contenga un número complejo
 
 # In[3]:
 
-
+num_complex = 4 + 5j
 
 
 
@@ -46,7 +48,7 @@
 # In[4]:
 
 
-
+type(num_complex)
 
 
 # 7) Crear una variable que contenga el valor del número Pi redondeado a 4 decimales
@@ -54,13 +56,16 @@
 # In[1]:
 
 
-pi = 3.1416
+pi = 3.1416 
 
 
 # 8) Crear una variable que contenga el valor 'True' y otra que contenga el valor True. ¿Se trata de lo mismo?
 
 # In[3]:
 
+v_str = "True"
+
+v_bool = True
 
 
 
@@ -69,7 +74,9 @@ pi = 3.1416
 
 # In[5]:
 
+type(v_str)
 
+type(v_bool)
 
 
 
@@ -77,7 +84,7 @@ pi = 3.1416
 
 # In[1]:
 
-
+suma = 3 + 4.3
 
 
 
@@ -85,8 +92,7 @@ pi = 3.1416
 
 # In[2]:
 
-
-
+5j + 4j 
 
 
 # 12) Realizar una operación de suma de un número real y otro complejo
@@ -94,7 +100,7 @@ pi = 3.1416
 # In[4]:
 
 
-
+4 + 9j
 
 
 # 13) Realizar una operación de multiplicación
@@ -102,22 +108,22 @@ pi = 3.1416
 # In[5]:
 
 
-
+4 * 12
 
 
 # 14) Mostrar el resultado de elevar 2 a la octava potencia
 
 # In[6]:
 
-
+print(2**8)
 
 
 # 15) Obtener el cociente de la división de 27 entre 4 en una variable y luego mostrarla
 
 # In[8]:
 
-
-
+division = float(27 / 4)
+print(division)
 
 
 # 16) De la división anterior solamente mostrar la parte entera
@@ -125,7 +131,7 @@ pi = 3.1416
 # In[9]:
 
 
-
+print(int(division))
 
 
 # 17) De la división de 27 entre 4 mostrar solamente el resto
@@ -133,7 +139,8 @@ pi = 3.1416
 # In[1]:
 
 
-
+divsion_resto = 27 % 4
+print(divsion_resto)
 
 
 # 18) Utilizando como operandos el número 4 y los resultados obtenidos en los puntos 16 y 17. Obtener 27 como resultado
@@ -141,30 +148,31 @@ pi = 3.1416
 # In[2]:
 
 
-
+print(4 * 6 + 3)
 
 
 # 19) Utilizar el operador "+" en una operación donde intervengan solo variables alfanuméricas
 
 # In[3]:
 
-
-
+var_1 = "Don "
+var_2 = "Quijote"
+print(var_1 +  var_2)
 
 
 # 20) Evaluar si "2" es igual a 2. ¿Por qué ocurre eso?
 
 # In[4]:
 
+2 == "2"
 
-
-
+#ocurre por que estas comparandp un numero o constante con un string que es un hilo de texte por mas que el contenido sea igual sus valores no lo son.
 
 # 21) Utilizar las funciones de cambio de tipo de dato, para que la validación del punto 20 resulte verdadera
 
 # In[11]:
 
-
+2 == int("2")
 
 
 
@@ -173,22 +181,23 @@ pi = 3.1416
 # In[12]:
 
 
-
+a = float('3.8')
 
 
 # 23) Crear una variable con el valor 3, y utilizar el operador '-=' para modificar su contenido y que de como resultado 2.
 
 # In[15]:
 
-
-
+a = 3
+a -= 1
+print(a)
 
 
 # 24) Realizar la operacion 1 << 2 ¿Por qué da ese resultado? ¿Qué es el sistema de numeración binario?
 
 # In[29]:
 
-
+1 << 2
 
 
 
@@ -196,14 +205,21 @@ pi = 3.1416
 
 # In[23]:
 
+print(2 + 2)
 
+print("2 " + '2')
 
-
+#son distintos ya que al operar con strign es lo que se lmma un concatenamiento de palabras mientras que cuando operamos con numeros reales se le puede llamar operacion algoritmica
 
 
 # 26) Realizar una operación válida entre valores de tipo entero y string
 
 # In[30]:
 
+a = 'es un hermoso dia. hoy hacen: '
+b = 30
+c = ' grados'
+print( a + str(b) + c)
 
 
+# %%
